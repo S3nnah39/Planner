@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+        Name: Tasha Ogoti
+        Pawprint: tsofyx
+        Date: 10/25/2020
+        Challenge: To-Do ListF20
+
+
+
+Sources: https://www.w3schools.com/charsets/tryit.asp?deci=9788
+         https://www.w3schools.com/html/html_forms.asp
+         https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+
+
+       Bonus to store into local storage is attempted 
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>ToDo List</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="t2.css" type="text/css">
+        
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="t3.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	</head>
+    <body id="whole">
+    
+        <h1 id="titleMain" ondblclick="changeHeader()">To-Do List </h1>
+        
+        <a href="file:///C:/Users/TashaOgoti/Desktop/MIzzou%20'20/2830/Challenge/C06/TsofyxProjectsF20.html" id="return">Return to Projects<i class="arrow right"></i></a>
+        <!--
+        <button id="mode" onclick="toggleMode()">DarkMode</button>
+        
+        -->
+             <button id="dark" onclick="darkMode()"> &#x263E;</button>
+        <button id="light" onclick="lightMode()"> &#x263C;</button>
+    
+            
+       <div id="items">
+            <table id="tableData" >
+                <thead>
+                    <tr id="rowOne">
+                        <th class="displayOne">Title</th>
+                        <th class="displayTwo">Type</th>
+                        <th class="displayThree">Priority</th>
+                        <th class="displayFour">Date</th>
+                        <th class="displayFive">Action</th>
+                    </tr>
+ 
+                </thead>
+                <tbody id="bodyData">
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="toDoForm">
+            <form action="#" method="get" id="tD"  onreset="clearData()" name="formData">
+                <div id="titleLabel"><label for="title" id="formH"> Add a To - Do </label></div>
+                <input type="text" id="title" name="theTitle" placeholder="Title">
+                
+                <select id="type" name="theType">
+                    <option value="">Select Type</option>
+                    <option value="homework">Homework</option>
+                    <option value="readings">Readings</option>
+                    <option value="test">Test</option>
+                    <option value="project">Project</option>
+                </select>
+                
+                
+                <label for="priority">Priority : <span id="stars" >  </span> </label>
+                <input type="range" min="0" max="5" id="priority" name="thePriority" oninput="sliderValue()" onreset="clearData()">
+
+                <input type="date" id="date" name="theDate" oninput="dateValid()" onreset="clearData()">
+                
+                <br>
+                
+                <div id="formBtn">
+                    <button id="add" type="button" onclick="addValues()" >Add</button>
+                    <!--<button id="clear" type="button" value="Clear" >Clear</button>-->
+                    <input id="clear" type="reset" value="Clear">
+                </div>
+            </form>
+        </div>
+
+
+	</body>
+</html>

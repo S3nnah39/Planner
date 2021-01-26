@@ -1,0 +1,144 @@
+#whole{
+    background: linear-gradient(#9d9494,white);
+    /*background-color: white;*/
+    color: black;
+}
+#titleMain{
+    text-align: center;
+    font-size: 40px;
+}
+#bodyData{
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+tr:hover{
+    background: linear-gradient(#0f0fd1,#5757de);
+    transform: scale(1.1);
+}
+
+#mode{
+    font-size: 15px;
+    width: 85px;
+    position: absolute;
+    right: 0;
+    padding: 5px;
+    top: 10px;
+    height: 40px;
+}
+.toggleM{
+  background-color: black;
+  color: white;
+  /*background: linear-gradient(#0d0c0c,#393434);*/
+}
+#dark{
+    /*border-top: 5px solid #0b0707;
+    border-bottom: 5px solid #0b0707;
+    border-left: 5px solid #0b0707;
+    border-radius: 5px;*/
+    position: absolute;
+    right: 43px;
+    padding: 5px;
+    font-size: 18px;
+    top: 10px;
+    height: 40px;
+    width: 45px;
+    background-color: white;
+}
+
+#light{
+    /*border-top: 5px solid #0b0707;
+    border-bottom: 5px solid #0b0707;
+    border-right: 5px solid #0b0707;
+    border-radius: 5px;*/
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 5px; 
+    font-size: 18px;
+    height: 40px;
+    width: 45px;
+    background-color: black;
+}
+
+#return{
+    border: 2px solid blue;
+    left: 0;
+    border-radius: 5px;
+    position: absolute;
+    padding: 5px;
+    font-size: 25px;
+    top: 10px;
+    height: 30px;
+    width: 200px;
+    text-decoration: none;
+}
+#return:hover{
+    background-color: darkcyan;
+    box-shadow: 0 10px 10px lightblue;
+}
+.arrow {
+  border: solid blue;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 3px;
+  left: 250px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+#items{
+    border: 2px solid darkblue;
+    height: 350px;
+    width: 75%;
+    margin: auto;
+    overflow: scroll;
+    overflow-y: scroll;
+}
+#tableData{
+    border: 10px solid #1849ce;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: scroll;
+    overflow-y: scroll;
+}
+th{
+    border: 5px solid #1849ce;
+    padding: 8px;
+    font-size: 25px;
+}
+
+td{
+    height: 40px;
+}
+
+div#toDoForm{
+    border: 20px solid blue; 
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    box-shadow: 5px 10px 0 #1e1ece;
+}
+
+#titleLabel{
+    font-size: 20px;
+    width: 100%;
+}
+
+#formBtn{
+    width: 100%;
+    padding: 5px;
+}
+#add, #clear{
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+
+#date,#priority, #type, #text{
+    margin: 20px;
+}
+
